@@ -3,7 +3,7 @@
     package="com.eetown.broadcasttest">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -21,11 +21,11 @@
         </activity>
 
         <receiver
-            android:name=".broadcastrecevier.BootCompleteReceiver"
+            android:name=".broadcastrecevier.BootCompleteRecevier"
             android:enabled="true"
             android:exported="true">
-            <intent-filter >
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            <intent-filter android:priority="2147483647">  <!--优先级 int 的最大值-->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
 
         </receiver>
