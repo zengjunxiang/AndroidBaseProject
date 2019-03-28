@@ -20,7 +20,7 @@
         <receiver android:name=".MyBroadcastRecevier">
             android:enabled="true"
             android:exported="true">
-            <intent-filter >
+            <intent-filter  >
                 <action android:name="com.eetown.broadcasttest.MyBroadcast" />
             </intent-filter>
         </receiver>

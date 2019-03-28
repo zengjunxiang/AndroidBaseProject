@@ -33,7 +33,7 @@
         <receiver android:name=".broadcastrecevier.MyBroadcastRecevier"
             android:enabled="true"
             android:exported="true">
-            <intent-filter >
+            <intent-filter  android:priority="214748247">
                 <action android:name="com.eetown.broadcasttest.MyBroadcast" />
             </intent-filter>
         </receiver>

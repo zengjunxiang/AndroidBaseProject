@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                registerReceiver(mMyBroadcastRecevier, intentFilter);
 
                 //intent.setComponent(new ComponentName("com.eetown.broadcasttest", "com.eetown.broadcasttest.MyBroadcast"));
-                  sendBroadcast(intent);
+                  sendOrderedBroadcast(intent,null);
                 break;
 
             default:
