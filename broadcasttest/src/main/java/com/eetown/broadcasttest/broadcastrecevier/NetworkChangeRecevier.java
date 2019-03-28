@@ -26,7 +26,7 @@ public class NetworkChangeRecevier extends BroadcastReceiver {
         // TODO: 2019/3/28  somethings
         //  Toast.makeText(context, "NetWork had changed", Toast.LENGTH_LONG).show();
 
-        //better
+        //better  optimization hint 
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
