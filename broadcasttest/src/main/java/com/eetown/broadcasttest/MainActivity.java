@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (mLocalBroadcastManager != null) {
             unregisterReceiver(mLocalBroadcast);
         }
-
     }
 
     @Override
@@ -92,11 +91,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //intent.setComponent(new ComponentName("com.eetown.broadcasttest", "com.eetown.broadcasttest.MyBroadcast"));
 
                 //发送有序广播
-                //  sendOrderedBroadcast(intent,null);
+                //sendOrderedBroadcast(intent,null);
 
                 //发送本地广播
                 mLocalBroadcastManager.sendBroadcast(intent);
-
 
                 break;
 
